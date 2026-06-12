@@ -68,7 +68,7 @@ Sebbene sia un gioco testuale, l'esperienza è arricchita tramite:
 
 ## Requisiti Tecnici e Compilazione
 
-Il codice aderisce agli standard C moderni (C99/C11) e richiede il link alla libreria standard.
+Il codice aderisce allo standard C11 e richiede il link alla libreria standard.
 
 **Compilazione consigliata:**
 ```bash
