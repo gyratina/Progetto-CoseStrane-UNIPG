@@ -3,6 +3,9 @@
 
 #include "gamelib.h"
 
+// Macro che indica la versione del gioco
+#define game_version "v1.1.1"
+
 // Colori per le scritte colorate in gioco.
 #define RESET       "\033[0m"
 #define ROSSO       "\033[31m"
@@ -10,7 +13,6 @@
 #define H_YELLOW    "\033[33m"
 #define CIANO       "\033[36m"
 #define ROSA        "\033[95m"
-
 
 
 #define t_length 130

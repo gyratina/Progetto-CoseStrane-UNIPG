@@ -1548,15 +1548,15 @@ static int combatti(giocatore* giocatore) {
         // Statistiche per ogni tipo di nemico assegnate sul momento
         switch (nemico_attuale.tipologia) {
             case democane:
-                nemico_attuale.attacco_psichico = 12; // 10
+                nemico_attuale.attacco_psichico = 10; // 10
                 nemico_attuale.difesa_psichica = 15;  // 15
                 break;
             case billi:
-                nemico_attuale.attacco_psichico = 15;   // 12
+                nemico_attuale.attacco_psichico = 12;   // 12
                 nemico_attuale.difesa_psichica = 20;    // 20
                 break;
             case demotorzone:
-                nemico_attuale.attacco_psichico = 20;
+                nemico_attuale.attacco_psichico = 17;
                 nemico_attuale.difesa_psichica = 40;
                 break;
             default:

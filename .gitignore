@@ -60,3 +60,4 @@ build/
 
 # personal utilities
 appunti.txt
+.clangd

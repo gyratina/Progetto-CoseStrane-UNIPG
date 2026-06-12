@@ -23,35 +23,6 @@ void terminal_cleaner() {
     printf("\033[H\033[J");
 }
 
-void game_title_printer() {
-    terminal_cleaner();     // Pulizia del terminale
-
-    FILE *f = fopen("title_img.txt", "r");  // Apertura del file in lettura
-    char bufferDIM[1024];   // Array per memorizzare temp. una riga del file.
-
-    // Controllo errori se il file non esiste o non può essere aperto
-    if (f == NULL) {
-        printf("ERRORE: Impossibile caricare title_img.txt\n");
-        // Fallback: Viene stampato il nome del gioco
-        printf(ROSSO "\nCOSESTRANE\n\n" RESET);
-        return;
-    }
-
-    printf(ROSSO);  // Impostazione color del titolo
-
-    // Ciclo di lettura e stampa del titolo.
-    //      fgets() legge dal file e mette i caratteri in bufferDIM.
-    //      Il ciclo di ferma se legge (sizeof(bufferDIM) - 1) o "\n".
-    //      Restituisce NULL quando arriva all'EOF.
-    while (fgets(bufferDIM, sizeof(bufferDIM), f) != NULL) {
-        printf("%s", bufferDIM);
-    }
-
-    printf(RESET "\n");
-
-    fclose(f);
-}
-
 void printf_centered(const char* color, const char* ftext, ...) {
     char temp_ftext[1024];
     va_list args;
@@ -90,6 +61,37 @@ void printf_centered(const char* color, const char* ftext, ...) {
     }
     printf("\n");
 }
+
+void game_title_printer() {
+    terminal_cleaner();     // Pulizia del terminale
+
+    FILE *f = fopen("title_img.txt", "r");  // Apertura del file in lettura
+    char bufferDIM[1024];   // Array per memorizzare temp. una riga del file.
+
+    // Controllo errori se il file non esiste o non può essere aperto
+    if (f == NULL) {
+        printf("ERRORE: Impossibile caricare title_img.txt\n");
+        // Fallback: Viene stampato il nome del gioco
+        printf(ROSSO "\nCOSESTRANE\n\n" RESET);
+        return;
+    }
+
+    printf(ROSSO);  // Impostazione color del titolo
+
+    // Ciclo di lettura e stampa del titolo.
+    //      fgets() legge dal file e mette i caratteri in bufferDIM.
+    //      Il ciclo di ferma se legge (sizeof(bufferDIM) - 1) o "\n".
+    //      Restituisce NULL quando arriva all'EOF.
+    while (fgets(bufferDIM, sizeof(bufferDIM), f) != NULL) {
+        printf("%s", bufferDIM);
+    }
+
+    printf_centered(ROSSO, game_version"\n");
+    printf(RESET "\n");
+
+    fclose(f);
+}
+
 
 void wait_4click(const char* text) {
     printf_centered(ROSSO, text);

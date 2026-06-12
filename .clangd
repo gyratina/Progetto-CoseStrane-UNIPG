@@ -1,5 +1,5 @@
 CompileFlags:
     Add:
         - -xc
-        - -I/home/v/Coding/C/Programmazione Procedurale/appello-3-giugno-2026-bis-gyratina/include
+        - -I/home/v/Coding/C/Programmazione Procedurale/Progetto-CoseStrane-UNIPG/include
         - -std=11
