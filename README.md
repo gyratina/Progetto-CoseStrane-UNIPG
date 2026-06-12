@@ -77,6 +77,6 @@ gcc -o build/CoseStrane src/*.c -std=c11 -Wall -Wextra -Iinclude -O2
 
 ---
 
-## 🛡️ Sicurezza e Robustezza
+## Sicurezza e Robustezza
 - **Memory Leak:** Il progetto include una funzione `dealloca_mappe()` che esegue il crawling completo delle liste concatenate per liberare ogni nodo prima della chiusura o rigenerazione della mappa.
 - **Input Validation:** Ogni input utente è filtrato tramite cicli `do-while` e controlli sui range degli enum.
