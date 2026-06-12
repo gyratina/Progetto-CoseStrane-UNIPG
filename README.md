@@ -1,10 +1,10 @@
 # Progetto "Cose Strane"
 **Cose Strane** è un'avventura testuale RPG a turni sviluppata in C. Il progetto esplora concetti complessi di programmazione procedurale, gestione dinamica della memoria e strutture dati non lineari, traendo ispirazione dall'immaginario di *Stranger Things*.
 
-Autori:
-- <a href="https://francescosantini.sites.dmi.unipg.it/index.html">Francesco Santini</a>, Docente e direttore artistico del progetto. Ha dettato numerose indicazioni architetturali.
-- <a href="https://valerioditommaso.dev">Valerio Di Tommaso</a>, Studente (io) e programmatore del progetto e responsabile dell'implementazione concreta dell'architettura. Direttore artistico del sistema di combattimento e della TUI.
-Anno: 2026
+- Anno: 2026<br>
+- Autori:
+  - <a href="https://francescosantini.sites.dmi.unipg.it/index.html">Francesco Santini</a>, Docente e direttore artistico del progetto. Ha dettato numerose indicazioni architetturali.
+  - <a href="https://valerioditommaso.dev">Valerio Di Tommaso</a>, Studente (io) e programmatore del progetto e responsabile dell'implementazione concreta dell'architettura. Direttore artistico del sistema di combattimento e della TUI.
 
 _Title Screen:_
 <img width="2204" height="1838" alt="immagine" src="https://github.com/user-attachments/assets/f2179d10-6eaa-477c-aace-78861abea8b6" />
